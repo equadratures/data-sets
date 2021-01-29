@@ -3,8 +3,9 @@ This repository stores datasets intended for use with the [equadratures](https:/
 
 ## Summary of datasets
 
-- `naca0012`: 
-- `blade_envelopes`:
+- **naca0012**: Aerodynamic performance data for an ensemble of deformed naca0012 aerofoils. The data is ideal for testing surrogate models intended for rapid flowfield estimation.
+
+- **blade_envelopes**: Aerodynamic performance data for an ensemble of deformed von Karman Institute LS89 turbine blades. This data is used in the Blade Envelopes papers ([Part I](https://arxiv.org/abs/2011.11636) and [Part II](https://arxiv.org/abs/2012.15579)), which explore a novel approach to determining manufacturing tolerances via dimension reduction.
 
 ## To load datasets
 The datasets can be loaded using the `datasets.load_eq_dataset()` function in equadratures. The requested dataset can either be downloaded directly by the code, or to minimise downloads this repo can be cloned once by the user, and the local repo directory can be given to the function. In both cases a summary of the requested dataset will be printed to screen, and a `NpzFile` object containing the data will be returned. The numpy arrays within this can be accessed in the usual way, e.g. `X = data['X']`.
