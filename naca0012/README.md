@@ -1,6 +1,6 @@
 This dataset contains aerodynamic data for a set of 2100 aerofoils. Each aerofoil is obtained by deforming a NACA0012 aerofoil using 50 Hicks-Henne functions. 
 
-Data is obtained with the SU2 CFD solver, which each case run at an angle of incidence of 0deg and Reynolds number of 6M.
+Data is obtained with the SU2 CFD solver, with each case run at an angle of incidence of 0deg and Reynolds number of 6M.
 
 Data in file:
 

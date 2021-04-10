@@ -7,6 +7,8 @@ This repository stores datasets intended for use with the [equadratures](https:/
 
 - **blade_envelopes**: Aerodynamic performance data for an ensemble of deformed von Karman Institute LS89 turbine blades. This data is used in the Blade Envelopes papers ([Part I](https://arxiv.org/abs/2011.11636) and [Part II](https://arxiv.org/abs/2012.15579)), which explore a novel approach to determining manufacturing tolerances via dimension reduction.
 
+- **probes**: Temperature recovery and loss data for an ensemble of shrouded probes used to measure stagnation temperature in turbo-machinery applications. This data is used in the [ASME Turbo Expo paper](https://asmedigitalcollection.asme.org/GT/proceedings-abstract/GT2020/84089/V02CT35A057/1094558), which uses dimension reduction to explore the design of turbo-machinery temperature probes.
+
 ## To load datasets
 The datasets can be loaded using the `datasets.load_eq_dataset()` function in equadratures. The requested dataset can either be downloaded directly by the code, or to minimise downloads this repo can be cloned once by the user, and the local repo directory can be given to the function. In both cases a summary of the requested dataset will be printed to screen, and a `NpzFile` object containing the data will be returned. The numpy arrays within this can be accessed in the usual way, e.g. `X = data['X']`.
 
